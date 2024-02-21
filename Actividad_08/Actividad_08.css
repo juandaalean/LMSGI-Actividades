@@ -1,0 +1,52 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/a0/16/99/a016992542853f56168436eb10216e00.jpg);
+    color: white;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section{
+    color: hotpink;
+    border: whitesmoke solid 2px;
+    padding: 5px;
+}
+
+
+.img-1{
+    width: 60%;
+    height: 400px;
+}
+
+.img-2{
+    width: 500px;
+}
+
+.sect-1{
+    font-size: 10px;
+}
+
+.sect-2{
+    font-size: 2em;
+
+}
+
+.art-1{
+    color: rgb(47, 209, 185) !important;
+}
+
+h1{
+    font-size: 12mm;
+    color: darkgrey;
+}
+
+h2{
+    color: blueviolet !important;
+}
+
+h3{
+    font-size: 50%;
+}
+
+p{
+    font-size: 1.35em;
+}
