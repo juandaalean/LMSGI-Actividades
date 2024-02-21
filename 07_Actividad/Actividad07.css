@@ -1,0 +1,39 @@
+header{
+    background-color: black;
+    color: yellow;
+}
+
+.Mazda{
+    width: 650px;
+}
+
+.Nissan{
+    width: 650px;
+}
+
+.art-1{
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.art-2{
+    color: blue;
+    background-color: rgb(196, 58, 58);
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+}
+
+#titulo-1{
+    font-size: 50px;
+    text-align: center;
+    color: blueviolet;
+}
+
+#titulo-2{
+    font-size: 50px;
+    text-align: center;
+    color: slateblue;
+    }
