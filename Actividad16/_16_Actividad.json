@@ -1,0 +1,50 @@
+{"videojuego":{
+    "nombre": "Dark Souls III",
+    "fecha": "04/03/2014",
+    "nota": 10,
+    "programadores":[
+        {"programador1":{
+            "id": 1,
+            "nombre": "Ramon",
+            "apelidos": "Ramirez Mesa",
+            "dni": "L4521474G",
+            "fecha_nacimiento": "07/11/1985",
+            "direccion":{
+                "tipoVia": "154a",
+                "nombreVia": "Alcala",
+                "codigoPostal": "017856",
+                "pais": "España"
+            }
+        }
+    },
+        {"programador2":{
+            "id": 2,
+            "nombre": "Luis",
+            "apelidos": "Vietnam",
+            "dni": "Ñ4766215T",
+            "fecha_nacimiento": "25/12/1998",
+            "direccion":{
+                "tipoVia": "254a",
+                "nombreVia": "Calatraba",
+                "codigoPostal": "14852",
+                "pais": "Chile"
+            }
+        }
+        }
+    ],
+
+    "compania":{
+        "id": 1524,
+        "nombreCompania": "Felix Estudios",
+        "nif": "H45789F",
+        "direccionEmpresa":{
+            "tipoVia": "a625",
+            "nombreVia": "Orense",
+            "codigoPostal": "045061",
+            "pais": "España"
+        }
+    },
+
+    "codigoHTML": "<html><head><title>Página web de la pelicula</title></head><body><h1 style="text-align:center">BIENVENIDA</h1><h2 stlye="text-align:center; color:red">Dark Souls III</h2><img src=""https://cdn.cloudflare.steamstatic.com/steam/apps/570940/capsule_616x353.jpg?t=1700659167" alt="dark_souls"></body></html>""
+}
+}
