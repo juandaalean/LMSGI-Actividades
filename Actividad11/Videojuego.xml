@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<videojuego id="JuegoUltraDivertido">
+
+    <nombre>Dark Souls III</nombre>
+    <fecha>04/03/2014</fecha>
+    <nota>10</nota>
+
+    <programadores>
+        <programador id="1">
+        <nombre>Ramon</nombre>
+        <apellidos>Martinez Mesa</apellidos>
+        <dni>L4521474G</dni>
+        <fecha_nacimiento>07/11/1985</fecha_nacimiento>
+        <direccion>
+            <tipo_via>154a</tipo_via>
+            <nombre_via>Alcala</nombre_via>
+            <cod_postal>017856</cod_postal>
+            <pais>España</pais>
+        </direccion>
+        </programador>
+
+        <programador id="2">
+        <nombre>Daria</nombre>
+        <apellidos>Granados Mercedes</apellidos>
+        <dni>P4158658A</dni>
+        <fecha_nacimiento>07/02/2000</fecha_nacimiento>
+        <direccion>
+            <tipo_via>47d</tipo_via>
+            <nombre_via>Miracielos</nombre_via>
+            <cod_postal>758841</cod_postal>
+            <pais>Republica Dominicana</pais>
+        </direccion>
+        </programador>
+
+        <programador id="3">
+        <nombre>Elber</nombre>
+        <apellidos>Kiku Lazo</apellidos>
+        <dni>K8715986M</dni>
+        <fecha_nacimiento>17/12/1995</fecha_nacimiento>
+        <direccion>
+            <tipo_via>9c</tipo_via>
+            <nombre_via>Pereira</nombre_via>
+            <cod_postal>05002</cod_postal>
+            <pais>Argentina</pais>
+        </direccion>
+        </programador>
+    </programadores>
+
+    <compania id="1524">
+        <nombre_compania>Felix Estudios</nombre_compania>
+        <nif>H45789F</nif>
+        <direccion_empresa>
+            <tipo_via>62</tipo_via>
+            <nombre_via>Orence</nombre_via>
+            <cod_postal>042561</cod_postal>
+            <pais>España</pais>
+        </direccion_empresa>
+    </compania>
+
+    <html_videojuego>
+    <![CDATA[ 
+        <html>
+            <head>
+                <title>Página web de la pelicula</title>
+            </head>
+            <body>
+                <h1 style="text-align:center">BIENVENIDA</h1>
+                <h2 stlye="text-align:center; color:red">Dark Souls III</h2>
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570940/capsule_616x353.jpg?t=1700659167" alt="dark_souls">
+            </body>
+        </html>
+    ]]>
+    </html_videojuego>
+</videojuego>
