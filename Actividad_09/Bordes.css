@@ -1,0 +1,32 @@
+.tnr, .pesp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    background-color: yellow;
+    text-align: justify;
+    border: 3px solid blue  ;
+}
+
+h1{
+    text-transform: capitalize;
+    color: blue;
+    border: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+
+#h2-especial{
+    letter-spacing: 3px;
+    word-spacing: 8px;
+    border-top: 5px red dashed;
+    border-left: 10px aquamarine double;
+    border-bottom: 8px forestgreen dotted;
+    border-right: 5px rebeccapurple groove;
+}
+
+.h3esp{
+    width: 30%;
+    text-align: right;
+}
+

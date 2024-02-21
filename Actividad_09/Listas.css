@@ -1,0 +1,15 @@
+.paises{
+    list-style-image: url(img/earth-americas-solid.svg);    
+}
+
+.ol-list{
+    list-style-type: upper-latin;
+}
+
+.square{
+    list-style: square;
+}
+
+.roman{
+    list-style-type: lower-roman;
+}
