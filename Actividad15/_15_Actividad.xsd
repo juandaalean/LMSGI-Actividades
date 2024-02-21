@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del tipo para el nombre de la ciudad -->
+  <xs:simpleType name="nombreCiudad">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][a-zA-Z ]{2,19}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el código de identificador -->
+  <xs:simpleType name="codigoIdentificador">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z]{2}-\d{2,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la población -->
+  <xs:simpleType name="poblacion">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="100"/>
+      <xs:maxInclusive value="100000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el nombre del alcalde -->
+  <xs:simpleType name="nombreAlcalde">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][a-zA-Z]{0,9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para los apellidos del alcalde -->
+  <xs:simpleType name="apellidosAlcalde">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la edad del alcalde -->
+  <xs:simpleType name="edadAlcalde">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="18"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el teléfono del alcalde -->
+  <xs:simpleType name="telefonoAlcalde">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+34\d{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el correo electrónico -->
+  <xs:simpleType name="email">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@\s]+@[^@\s]+\.[^@\s]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el id de los funcionarios -->
+  <xs:simpleType name="idFuncionario">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el nombre y apellidos de los funcionarios -->
+  <xs:simpleType name="nombreApellidosFuncionario">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el código postal -->
+  <xs:simpleType name="codigoPostal">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la fecha de nacimiento -->
+  <xs:simpleType name="fechaNacimiento">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{2}/\d{2}/\d{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para la contraseña -->
+  <xs:simpleType name="contrasena">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]\d{2}[%$@!].{7,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del tipo para el número de cuenta bancaria -->
+  <xs:simpleType name="cuentaBancaria">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="ES\d{14}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Definición del elemento ciudad -->
+  <xs:element name="ciudad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="nombreCiudad"/>
+        <xs:element name="poblacion" type="poblacion"/>
+        <xs:element name="alcalde">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="nombreAlcalde"/>
+              <xs:element name="apellidos" type="apellidosAlcalde"/>
+              <xs:element name="telefono" type="telefonoAlcalde"/>
+              <xs:element name="correo" type="email"/>
+            </xs:sequence>
+            <xs:attribute name="edad" type="edadAlcalde"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="funcionarios">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="funcionario" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombreApellidos" type="nombreApellidosFuncionario"/>
+                    <xs:element name="codigoPostal" type="codigoPostal"/>
+                    <xs:element name="fechaNacimiento" type="fechaNacimiento"/>
+                    <xs:element name="contrasena" type="contrasena"/>
+                    <xs:element name="cuentaBancaria" type="cuentaBancaria"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="idFuncionario"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="codigo" type="codigoIdentificador"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

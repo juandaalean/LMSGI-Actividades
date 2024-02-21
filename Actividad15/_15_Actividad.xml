@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ciudad codigo="AB-1234" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:noNamespaceSchemaLocation="_15_Actividad.xsd">
+    <nombre>Madrid</nombre>
+  <poblacion>60000</poblacion>
+  <alcalde edad="45">
+    <nombre>Juan</nombre>
+    <apellidos>Gómez Pérez</apellidos>
+    <telefono>+34661435678</telefono>
+    <correo>juangomez@example.com</correo>
+  </alcalde>
+  <funcionarios>
+    <funcionario id="F001">
+      <nombreApellidos>Marta González</nombreApellidos>
+      <codigoPostal>28001</codigoPostal>
+      <fechaNacimiento>15/05/1985</fechaNacimiento>
+      <contrasena>M27780975%</contrasena>
+      <cuentaBancaria>ES12345678901234</cuentaBancaria>
+    </funcionario>
+    <funcionario id="F002">
+      <nombreApellidos>Pablo Sánchez</nombreApellidos>
+      <codigoPostal>28002</codigoPostal>
+      <fechaNacimiento>20/08/1990</fechaNacimiento>
+      <contrasena>X65709264@</contrasena>
+      <cuentaBancaria>ES98765432109876</cuentaBancaria>
+    </funcionario>
+    <funcionario id="F003">
+      <nombreApellidos>Laura Martínez</nombreApellidos>
+      <codigoPostal>28003</codigoPostal>
+      <fechaNacimiento>10/11/1988</fechaNacimiento>
+      <contrasena>D35237941$</contrasena>
+      <cuentaBancaria>ES45678901234567</cuentaBancaria>
+    </funcionario>
+  </funcionarios>
+  </ciudad>
