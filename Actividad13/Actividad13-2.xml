@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="Actividad13-1.xsd">
+  <nombre>Biblioteca Don Pancho</nombre>
+  <seccion>
+    <libro>
+      <titulo>El Principito</titulo>
+      <autor>Pedro Pascal</autor>
+      <resumen>El viaje del principito hsta el secreto de la vida</resumen>
+      <editorial>
+        <codigo>R456-Z</codigo>
+        <nombre>Editorial Pepe Pepon</nombre>
+        <ciudad>Buenos Aires</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>La tristesa de la flor</titulo>
+      <autor>Desconocido</autor>
+      <anio>1989</anio>
+      <resumen>La flor esta triste :C</resumen>
+      <editorial>
+        <nombre>CaraMelo</nombre>
+        <ciudad>Calí</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>Cien años de soledad</titulo>
+      <autor>Gabriel García Márquez</autor>
+      <anio>1967</anio>
+      <resumen>La historia de la familia Buendía en Macondo.</resumen>
+      <editorial>
+        <codigo>R4432-19u</codigo>
+        <nombre>Ediciones Macondo</nombre>
+        <ciudad>Bogotá</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <seccion>
+    <libro>
+      <titulo>El pozo</titulo>
+      <autor>Marcos Alonso</autor>
+      <resumen>Un pozo que esconde un oscuro secreto</resumen>
+      <editorial>
+		<codigo>ER332</codigo>
+        <nombre>Editorial Perdicion Lectora</nombre>
+        <ciudad>Mongolía</ciudad>
+      </editorial>
+    </libro>
+    <libro>
+      <titulo>Diabolo</titulo>
+      <autor>Desconocido</autor>
+      <anio>1947</anio>
+      <resumen>Trata sobre una antigua historia de un hombre llamado Diabolo</resumen>
+      <editorial>
+        <nombre>New York S.K</nombre>
+        <ciudad>Nueva York</ciudad>
+      </editorial>
+    </libro>
+  </seccion>
+  <!-- Puedes agregar más secciones y libros según sea necesario -->
+</biblioteca>

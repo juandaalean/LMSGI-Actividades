@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición de tipos de datos -->
+  <xs:simpleType name="string-with-length">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="biblioteca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="seccion" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="libro" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulo" type="string-with-length"/>
+                    <xs:element name="autor" type="string-with-length"/>
+                    <xs:element name="anio" type="xs:integer" minOccurs="0"/>
+                    <xs:element name="resumen" type="string-with-length"/>
+                    <xs:element name="editorial">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="codigo" type="xs:string" minOccurs="0"/>
+                          <xs:element name="nombre" type="string-with-length"/>
+                          <xs:element name="ciudad" type="string-with-length"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

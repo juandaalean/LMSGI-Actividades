@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE empresa [
+<!ELEMENT empresa (nombre, nif, española, capital-social, direccion, empleados)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT española (#PCDATA)>
+
+<!ELEMENT capital-social (tipo, cantidad)>
+  <!ELEMENT tipo (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+
+<!ELEMENT direccion (tipo-via, nombre-via, cp, pais)>
+  <!ELEMENT tipo-via (#PCDATA)>
+  <!ELEMENT nombre-via (#PCDATA)>
+  <!ELEMENT cp (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT empleados (empleado+)>
+  <!ELEMENT empleado (nombre, apellidos+, dni, extranjero, fecha-nacimiento, salario, direccionEmpleado, casado?)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT dni (#PCDATA)>
+    <!ELEMENT extranjero (#PCDATA)>
+    <!ELEMENT fecha-nacimiento (#PCDATA)>
+    <!ELEMENT salario (#PCDATA)>
+    <!ELEMENT casado (#PCDATA)>
+
+    <!ELEMENT direccionEmpleado (direccionString, pais)>
+      <!ELEMENT direccionString (#PCDATA)>
+
+
+
+
+
+
+]>
+<empresa>
+
+    <nombre>Empresas Don Angelo Tangelo</nombre>
+        <nif>12345678A</nif>
+        <española>true</española>
+        <capital-social>
+            <tipo>yenes</tipo>
+            <cantidad>48560.54</cantidad>
+        </capital-social>
+        <direccion>
+            <tipo-via>Avenida</tipo-via>
+            <nombre-via>Paseo de la Castellana</nombre-via>
+            <cp>28046</cp>
+            <pais>España</pais>
+        </direccion>
+
+    <empleados>
+
+    <empleado>
+        <nombre>Juan</nombre>
+        <apellidos>Gomez</apellidos>
+        <apellidos>Perez</apellidos>
+        <dni>98765432B</dni>
+        <extranjero>false</extranjero>
+        <fecha-nacimiento>1990-05-15</fecha-nacimiento>
+        <salario>50000.0</salario>
+        <direccionEmpleado>
+            <direccionString>Calle Alcalá 45, Madrid</direccionString>
+            <pais>España</pais>
+        </direccionEmpleado>
+        <casado>true</casado>
+    </empleado>
+
+    <empleado>
+        <nombre>Maria</nombre>
+        <apellidos>Ruiz</apellidos>
+        <apellidos>Lopez</apellidos>
+        <dni>87654321C</dni>
+        <extranjero>true</extranjero>
+        <fecha-nacimiento>1985-03-20</fecha-nacimiento>
+        <salario>60000.0</salario>
+        <direccionEmpleado>
+            <direccionString>Avenida Diagonal 123, Barcelona</direccionString>
+            <pais>España</pais>
+        </direccionEmpleado>
+        <casado>false</casado>
+        </empleado>
+    </empleados>
+</empresa>
