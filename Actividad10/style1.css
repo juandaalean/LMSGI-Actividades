@@ -1,0 +1,73 @@
+div{
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.static{
+    position: static;
+    width: 500px;
+    height: 95px;
+}
+
+.relativo1{
+    background-color: blue;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    left: 5%;
+    top: 3.5rem;
+}
+
+.relativo2{
+    background-color: red;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    left: 15%;
+    top: 1.9rem;
+}
+
+.relativo3{
+    background-color: rgb(65, 165, 65);
+    position: relative;
+    width: 250px;
+    height: 150px;
+    left: 25%;
+    top: 0rem;
+}
+
+.absoluto1{
+    background-color: blueviolet;
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    left: 50%;
+    bottom: 30rem;
+}
+
+.absoluto2{
+    background-color: rgb(190, 126, 52);
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    left: 50%;
+    bottom: 10rem;
+}
+
+.absoluto3{
+    background-color: rgb(83, 179, 54);
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    left: 50%;
+    bottom: -10rem;
+}
+
+.fixed{
+    position: fixed;
+    width: 250px;
+    height: 95px;
+    left: 83%;
+    background-color: greenyellow;
+}
